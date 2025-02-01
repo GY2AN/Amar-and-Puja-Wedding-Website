@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="logo2.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amar❤︎Puja</title>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+    }
+
+    body {
+      background: linear-gradient(45deg, rgba(128, 0, 0, 0.05), rgba(255, 215, 0, 0.05));
+    }
+
+    .border-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 100vh;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    #root {
+      position: relative;
+      z-index: 2;
+      min-height: 100vh;
+      padding: 0 4rem;
+      background: transparent;
+    }
+
+    .border-svg {
+      position: fixed;
+      height: 100%;
+      width: 60px;
+    }
+
+    .border-left {
+      left: 0;
+    }
+
+    .border-right {
+      right: 0;
+    }
+
+    @media (min-height: 100vh) {
+      .border-container {
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="border-container">
+    <!-- Left Border -->
+    <svg class="border-svg border-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 800"
+      preserveAspectRatio="none">
+      <defs>
+        <pattern id="flowerPattern" patternUnits="userSpaceOnUse" width="60" height="120">
+          <!-- Lotus flower design -->
+          <g transform="translate(30,60)">
+            <path d="M0,0 C10,-10 20,-10 20,0 C20,10 10,10 0,0" fill="#FFD700" opacity="0.8" />
+            <path d="M0,0 C-10,-10 -20,-10 -20,0 C-20,10 -10,10 0,0" fill="#FFD700" opacity="0.8" />
+            <path d="M0,0 C10,10 20,10 20,0 C20,-10 10,-10 0,0" fill="#FFD700" opacity="0.8" />
+            <path d="M0,0 C-10,10 -20,10 -20,0 C-20,-10 -10,-10 0,0" fill="#FFD700" opacity="0.8" />
+            <circle cx="0" cy="0" r="3" fill="#800000" />
+          </g>
+          <!-- Decorative vines -->
+          <path d="M30,0 Q45,30 30,60 Q15,90 30,120" stroke="#FFD700" fill="none" stroke-width="1" />
+          <path d="M30,0 Q15,30 30,60 Q45,90 30,120" stroke="#FFD700" fill="none" stroke-width="1" />
+        </pattern>
+      </defs>
+
+      <!-- Background fill -->
+      <rect width="60" height="800" fill="url(#flowerPattern)" />
+
+      <!-- Main border line -->
+      <rect x="0" y="0" width="2" height="800" fill="#FFD700" />
+
+      <!-- Decorative dots -->
+      <g fill="#800000">
+        <circle cx="30" cy="100" r="3" />
+        <circle cx="30" cy="300" r="3" />
+        <circle cx="30" cy="500" r="3" />
+        <circle cx="30" cy="700" r="3" />
+      </g>
+
+      <!-- Additional decorative elements -->
+      <g stroke="#FFD700" fill="none" stroke-width="1">
+        <path d="M5,0 Q30,200 5,400 Q30,600 5,800" />
+        <path d="M55,0 Q30,200 55,400 Q30,600 55,800" />
+      </g>
+    </svg>
+
+    <!-- Right Border with its own complete pattern -->
+    <svg class="border-svg border-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 800"
+      preserveAspectRatio="none">
+      <defs>
+        <pattern id="flowerPatternRight" patternUnits="userSpaceOnUse" width="60" height="120">
+          <!-- Lotus flower design -->
+          <g transform="translate(30,60)">
+            <path d="M0,0 C10,-10 20,-10 20,0 C20,10 10,10 0,0" fill="#FFD700" opacity="0.8" />
+            <path d="M0,0 C-10,-10 -20,-10 -20,0 C-20,10 -10,10 0,0" fill="#FFD700" opacity="0.8" />
+            <path d="M0,0 C10,10 20,10 20,0 C20,-10 10,-10 0,0" fill="#FFD700" opacity="0.8" />
+            <path d="M0,0 C-10,10 -20,10 -20,0 C-20,-10 -10,-10 0,0" fill="#FFD700" opacity="0.8" />
+            <circle cx="0" cy="0" r="3" fill="#800000" />
+          </g>
+          <!-- Decorative vines -->
+          <path d="M30,0 Q45,30 30,60 Q15,90 30,120" stroke="#FFD700" fill="none" stroke-width="1" />
+          <path d="M30,0 Q15,30 30,60 Q45,90 30,120" stroke="#FFD700" fill="none" stroke-width="1" />
+        </pattern>
+      </defs>
+
+      <!-- Background fill -->
+      <rect width="60" height="800" fill="url(#flowerPatternRight)" />
+
+      <!-- Main border line -->
+      <rect x="58" y="0" width="2" height="800" fill="#FFD700" />
+
+      <!-- Decorative dots -->
+      <g fill="#800000">
+        <circle cx="30" cy="100" r="3" />
+        <circle cx="30" cy="300" r="3" />
+        <circle cx="30" cy="500" r="3" />
+        <circle cx="30" cy="700" r="3" />
+      </g>
+
+      <!-- Additional decorative elements -->
+      <g stroke="#FFD700" fill="none" stroke-width="1">
+        <path d="M5,0 Q30,200 5,400 Q30,600 5,800" />
+        <path d="M55,0 Q30,200 55,400 Q30,600 55,800" />
+      </g>
+    </svg>
+  </div>
+
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
