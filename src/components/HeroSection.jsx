@@ -1,9 +1,7 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Carousel styles
 import { Carousel } from "react-responsive-carousel";
-import vectorArt1 from "../assets/images/vector-art1.jpg";
-import vectorArt2 from "../assets/images/vector-art2.jpg";
-import vectorArt3 from "../assets/images/vector-art3.jpg"; // Example images
+
 
 const HeroSection = () => {
   return (
@@ -20,13 +18,16 @@ const HeroSection = () => {
             swipeable
           >
             <div>
-              <img src={vectorArt1} alt="Bride and Groom 1" />
+              <img src="https://raw.githubusercontent.com/GY2AN/Hosting/main/Images/images/vector-art1.jpg
+" alt="Bride and Groom 1" />
             </div>
             <div>
-              <img src={vectorArt2} alt="Bride and Groom 2" />
+              <img src="https://raw.githubusercontent.com/GY2AN/Hosting/main/Images/images/vector-art2.jpg
+" alt="Bride and Groom 2" />
             </div>
             <div>
-              <img src={vectorArt3} alt="Bride and Groom 3" />
+              <img src="https://raw.githubusercontent.com/GY2AN/Hosting/main/Images/images/vector-art3.jpg
+" alt="Bride and Groom 3" />
             </div>
           </Carousel>
         </div>

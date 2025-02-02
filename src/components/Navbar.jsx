@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +12,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="containerNav">
         <div className="logo">
-          <img src={logo} alt="Logo" className="logo-img" />
+          <img src="https://raw.githubusercontent.com/GY2AN/Hosting/main/Images/images/logo.png"  alt="Logo" className="logo-img" />
         </div>
 
         {/* Hamburger Icon for Mobile */}
